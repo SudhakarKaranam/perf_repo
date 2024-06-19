@@ -1,0 +1,1570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="userName" elementType="Argument">
+            <stringProp name="Argument.name">userName</stringProp>
+            <stringProp name="Argument.value">Sudhakar_Karanam</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="password" elementType="Argument">
+            <stringProp name="Argument.name">password</stringProp>
+            <stringProp name="Argument.value">SudhK@124</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="timeout" elementType="Argument">
+            <stringProp name="Argument.name">timeout</stringProp>
+            <stringProp name="Argument.value">120</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">seconds</stringProp>
+          </elementProp>
+          <elementProp name="sleep" elementType="Argument">
+            <stringProp name="Argument.name">sleep</stringProp>
+            <stringProp name="Argument.value">500</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">milli seconds</stringProp>
+          </elementProp>
+          <elementProp name="thinkTime" elementType="Argument">
+            <stringProp name="Argument.name">thinkTime</stringProp>
+            <stringProp name="Argument.value">2000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">milli seconds</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.ChromeDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig" testname="jp@gc - Chrome Driver Config">
+        <boolProp name="WebDriverConfig.acceptinsecurecerts">true</boolProp>
+        <boolProp name="WebDriverConfig.reset_per_iteration">true</boolProp>
+        <stringProp name="WebDriverConfig.driver_path">C:\Program Files\Google\Chrome\chromedriver\chromedriver.exe</stringProp>
+        <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
+        <boolProp name="WebDriverConfig.headless">true</boolProp>
+        <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
+        <stringProp name="ChromeDriverConfig.additional_args"></stringProp>
+        <stringProp name="ChromeDriverConfig.binary_path">C:\Program Files\Google\Chrome\Application\chrome.exe</stringProp>
+        <stringProp name="WebDriverConfig.proxy_type">SYSTEM</stringProp>
+        <stringProp name="WebDriverConfig.proxy_pac_url"></stringProp>
+        <stringProp name="WebDriverConfig.http_host"></stringProp>
+        <intProp name="WebDriverConfig.http_port">8080</intProp>
+        <boolProp name="WebDriverConfig.use_http_for_all_protocols">true</boolProp>
+        <stringProp name="WebDriverConfig.https_host"></stringProp>
+        <intProp name="WebDriverConfig.https_port">8080</intProp>
+        <stringProp name="WebDriverConfig.ftp_host"></stringProp>
+        <intProp name="WebDriverConfig.ftp_port">8080</intProp>
+        <stringProp name="WebDriverConfig.socks_host"></stringProp>
+        <intProp name="WebDriverConfig.socks_port">8080</intProp>
+        <stringProp name="WebDriverConfig.no_proxy">localhost</stringProp>
+        <stringProp name="WebDriverConfig.custom_capabilites"></stringProp>
+      </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SBE_Modify And Cancel Reservations_3_Product" enabled="true">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <longProp name="ThreadGroup.duration">3600</longProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.ChromeDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig" testname="jp@gc - Chrome Driver Config" enabled="true">
+          <boolProp name="WebDriverConfig.acceptinsecurecerts">true</boolProp>
+          <boolProp name="WebDriverConfig.reset_per_iteration">true</boolProp>
+          <stringProp name="WebDriverConfig.driver_path">C:\Program Files\Google\Chrome\chromedriver\chromedriver.exe</stringProp>
+          <boolProp name="WebDriverConfig.dev_mode">true</boolProp>
+          <boolProp name="WebDriverConfig.headless">false</boolProp>
+          <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
+          <stringProp name="ChromeDriverConfig.additional_args">remote-allow-origins=*</stringProp>
+          <stringProp name="ChromeDriverConfig.binary_path">C:\Program Files\Google\Chrome\Application\chrome.exe</stringProp>
+          <stringProp name="WebDriverConfig.proxy_type">SYSTEM</stringProp>
+          <stringProp name="WebDriverConfig.proxy_pac_url"></stringProp>
+          <stringProp name="WebDriverConfig.http_host"></stringProp>
+          <intProp name="WebDriverConfig.http_port">8080</intProp>
+          <boolProp name="WebDriverConfig.use_http_for_all_protocols">true</boolProp>
+          <stringProp name="WebDriverConfig.https_host"></stringProp>
+          <intProp name="WebDriverConfig.https_port">8080</intProp>
+          <stringProp name="WebDriverConfig.ftp_host"></stringProp>
+          <intProp name="WebDriverConfig.ftp_port">8080</intProp>
+          <stringProp name="WebDriverConfig.socks_host"></stringProp>
+          <intProp name="WebDriverConfig.socks_port">8080</intProp>
+          <stringProp name="WebDriverConfig.no_proxy">localhost</stringProp>
+          <stringProp name="WebDriverConfig.custom_capabilites"></stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
+        <hashTree/>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_randomStartDateBooking" enabled="true">
+          <stringProp name="maximumValue">7</stringProp>
+          <stringProp name="minimumValue">1</stringProp>
+          <stringProp name="outputFormat"></stringProp>
+          <boolProp name="perThread">false</boolProp>
+          <stringProp name="randomSeed"></stringProp>
+          <stringProp name="variableName">randomStartDateBooking</stringProp>
+        </RandomVariableConfig>
+        <hashTree/>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_randomEndDateBooking" enabled="true">
+          <stringProp name="maximumValue">7</stringProp>
+          <stringProp name="minimumValue">1</stringProp>
+          <stringProp name="outputFormat"></stringProp>
+          <boolProp name="perThread">false</boolProp>
+          <stringProp name="randomSeed"></stringProp>
+          <stringProp name="variableName">randomEndDateBooking</stringProp>
+        </RandomVariableConfig>
+        <hashTree/>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_randomfirstName" enabled="true">
+          <stringProp name="maximumValue">999999</stringProp>
+          <stringProp name="minimumValue">1</stringProp>
+          <stringProp name="outputFormat"></stringProp>
+          <boolProp name="perThread">false</boolProp>
+          <stringProp name="randomSeed"></stringProp>
+          <stringProp name="variableName">randomfirstName</stringProp>
+        </RandomVariableConfig>
+        <hashTree/>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_randomlastName" enabled="true">
+          <stringProp name="maximumValue">999999</stringProp>
+          <stringProp name="minimumValue">1</stringProp>
+          <stringProp name="outputFormat"></stringProp>
+          <boolProp name="perThread">false</boolProp>
+          <stringProp name="randomSeed"></stringProp>
+          <stringProp name="variableName">randomlastName</stringProp>
+        </RandomVariableConfig>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_T01_SBE Homepage">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
+import java.time.*; 
+
+WDS.browser.manage().window().setSize(new org.openqa.selenium.Dimension(1980, 1024));
+WDS.browser.manage().window().maximize();
+WDS.sampleResult.sampleStart()
+WDS.browser.get(&apos;https://be-l1.shs.dev.ascint.sabrecirrus.com/?adult=1&amp;arrive=2023-04-19&amp;chain=${Chain_Id}&amp;child=0&amp;currency=USD&amp;depart=2023-04-20&amp;hotel=${Hotel_Id}&amp;level=hotel&amp;locale=en-US&amp;rooms=1&apos;)
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//span[text()=&quot;$199 total for 1 night&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_T02_Select Dates">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//div[contains(@aria-label, &quot;${startDateBooking}&quot;)]&apos;)).click();
+Thread.sleep(${sleep});
+WDS.browser.findElement(By.xpath(&apos;//div[contains(@aria-label, &quot;${endDateBooking}&quot;)]&apos;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//div[@class=&quot;calendar-flyout_calendar&quot;]//div[@class=&quot;shs-widgets--calendar--total_price_tax&quot;]//span[text()=&quot;Excluding Taxes &amp; Fees&quot;]&apos;)));
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//button[@class=&quot;btn button_btn button_primary button_md&quot;]&apos;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//button[@class=&quot;btn button_btn button_primary button_sm&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()
+
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import java.time.LocalDate;
+import java.time.Duration;
+
+//String startDateBooking = LocalDate.now().plusDays(${__Random(0,7,randomStartDateBooking)});
+/*String randomAdults = ${__Random(1,2,randomAdults)};
+String randomChildren = ${__Random(1,2,randomChildren)};*/
+
+LocalDate startDateBooking = LocalDate.now().plusDays(Long.parseLong(vars.get(&quot;randomStartDateBooking&quot;))+1);
+LocalDate endDateBooking = startDateBooking.plusDays(Long.parseLong(vars.get(&quot;randomEndDateBooking&quot;)));
+
+String startDate = startDateBooking.format(&quot;EEEE, MMMM d, yyyy&quot;)
+String endDate = endDateBooking.format(&quot;EEEE, MMMM d, yyyy&quot;)
+
+Duration diff = Duration.between(startDateBooking.atStartOfDay(), endDateBooking.atStartOfDay());
+long duration = diff.toDays();
+
+vars.put(&quot;startDateBooking&quot;, startDate);
+vars.put(&quot;endDateBooking&quot;, endDate);
+vars.put(&quot;duration&quot;, duration.toString());
+
+/*vars.put(&quot;randomAdults&quot;, randomAdults);
+vars.put(&quot;randomChildren&quot;, randomChildren);*/
+</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_Book_3_Products_T03_Book Now (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//button[@class=&quot;btn button_btn button_primary button_sm&quot;]&apos;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(&apos;//h2[@class=&quot;offer-name clickable&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()
+
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_Book_3_Products_T04_Click On First Product (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+int endLimitP1, startLimitP2, endLimitP2, startLimitP3
+List&lt;WebElement&gt; totalNoOfProducts = WDS.browser.findElements(By.xpath(&quot;//*[contains(@class, &apos;offer-name clickable&apos;)]&quot;));
+int totalProducts = totalNoOfProducts.size()
+if(totalProducts == 10)
+{
+	endLimitP1 = 3;
+}
+
+if(totalProducts == 20)
+{
+	endLimitP1 = 6;
+}
+
+if(totalProducts == 30)
+{
+	endLimitP1 = 10;
+}
+int rand1 = new SplittableRandom().nextInt(1, endLimitP1);
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElements(By.xpath(&quot;//*[contains(@class, &apos;offer-name clickable&apos;)]&quot;))[rand1].click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//*[contains(@class, &quot;spark-btn spark-progress spark-btn--md btn btn-primary btn-lg&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()
+
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_Book_3_Products_T05_Select First Product (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.*; 
+
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@class, &apos;spark-btn spark-progress spark-btn--md btn btn-primary btn-lg&apos;)]&quot;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//div[@class=&quot;sip-widgets-offer__action-buttons&quot;]//div[contains(@class, &quot;offer-added-indicator&quot;)]&apos;)));	
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_Book_3_Products_T06_Click On Second Product (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+List&lt;WebElement&gt; totalNoOfProducts = WDS.browser.findElements(By.xpath(&quot;//*[contains(@class, &apos;offer-name clickable&apos;)]&quot;));
+int totalProducts = totalNoOfProducts.size()
+if(totalProducts == 10)
+{
+	startLimitP2 = 4;
+	endLimitP2 = 6;
+}
+
+if(totalProducts == 20)
+{
+	startLimitP2= 7;
+	endLimitP2 = 12;
+}
+
+if(totalProducts == 30)
+{
+	startLimitP2 = 11;
+	endLimitP2 = 20;
+}
+int rand2 = new SplittableRandom().nextInt(startLimitP2, endLimitP2);
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElements(By.xpath(&quot;//*[contains(@class, &apos;offer-name clickable&apos;)]&quot;))[rand2].click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//*[contains(@class, &quot;spark-btn spark-progress spark-btn--md btn btn-primary btn-lg&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_Book_3_Products_T07_Select Second Product (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.*; 
+
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@class, &apos;spark-btn spark-progress spark-btn--md btn btn-primary btn-lg&apos;)]&quot;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//div[@class=&quot;sip-widgets-offer__action-buttons&quot;]//div[contains(@class, &quot;offer-added-indicator&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_Book_3_Products_T08_Click On Third Product (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+List&lt;WebElement&gt; totalNoOfProducts = WDS.browser.findElements(By.xpath(&quot;//*[contains(@class, &apos;offer-name clickable&apos;)]&quot;));
+int totalProducts = totalNoOfProducts.size()
+if(totalProducts == 10)
+{
+	startLimitP3 = 7;
+}
+
+if(totalProducts == 20)
+{
+	startLimitP3= 13;
+}
+
+if(totalProducts == 30)
+{
+	startLimitP3 = 21;
+}
+int rand3 = new SplittableRandom().nextInt(startLimitP3, totalProducts);
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElements(By.xpath(&quot;//*[contains(@class, &apos;offer-name clickable&apos;)]&quot;))[rand3].click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//*[contains(@class, &quot;spark-btn spark-progress spark-btn--md btn btn-primary btn-lg&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_Book_3_Products_T09_Select Third Product (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@class, &apos;spark-btn spark-progress spark-btn--md btn btn-primary btn-lg&apos;)]&quot;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//div[@class=&quot;sip-widgets-offer__action-buttons&quot;]//div[contains(@class, &quot;offer-added-indicator&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_Book_3_Products_T10_Continue To Book (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//button[@class=&quot;btn button_btn button_primary button_md&quot;]&apos;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//span[text()=&quot;I agree with the Privacy Terms.&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_Book_3_Products_T11_Complete Booking (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;First Name&quot;]&apos;)).sendKeys(&apos;${firstName}&apos;);
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;Last Name&quot;]&apos;)).sendKeys(&apos;${lastName}&apos;);
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;Email Address&quot;]&apos;)).sendKeys(&apos;${email}&apos;);
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;Card Number&quot;]&apos;)).sendKeys(&apos;4&apos;);
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;Card Number&quot;]&apos;)).sendKeys(&apos;1&apos;);
+for(int i=1; i&lt;= 15; i++)
+{
+	WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;Card Number&quot;]&apos;)).sendKeys(&apos;1&apos;);
+}
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;Expiration Date (MM/YY)&quot;]&apos;)).sendKeys(&apos;1&apos;);
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;Expiration Date (MM/YY)&quot;]&apos;)).sendKeys(&apos;2&apos;);
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;Expiration Date (MM/YY)&quot;]&apos;)).sendKeys(&apos;3&apos;);
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;Expiration Date (MM/YY)&quot;]&apos;)).sendKeys(&apos;0&apos;);
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;Name on Card&quot;]&apos;)).sendKeys(&apos;${firstName} ${lastName}&apos;);
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//label[@for=&quot;privacyPolicy&quot;]&apos;)).click();
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//button[@class=&quot;btn button_btn button_primary button_md&quot;]&apos;)).click();
+//new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(&apos;//div[@class=&quot;sip-widgets-recommended-offers-component&quot;]//div[@class=&quot;spark-carousel__item--content spark-carousel__panel&quot;]&apos;)));
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.elementToBeClickable(By.xpath(&apos;//button[@class=&quot;btn button_btn button_primary button_sm&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">String firstName = &quot;PE_SBE_UI_First&quot;+vars.get(&quot;randomfirstName&quot;).toString();
+String lastName = &quot;PE_SBE_UI_Last&quot;+vars.get(&quot;randomlastName&quot;).toString();
+String email = firstName+&quot;.&quot;+lastName+&quot;@sabre.com&quot;;
+
+vars.put(&quot;firstName&quot;, firstName);
+vars.put(&quot;lastName&quot;, lastName);
+vars.put(&quot;email&quot;, email);</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor_c_confirmationNumber" enabled="true">
+            <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
+            <stringProp name="BoundaryExtractor.refname">c_confirmationNumber</stringProp>
+            <stringProp name="BoundaryExtractor.lboundary">&lt;span class=&quot;confirmation-message_confirmationNumber&quot;&gt; </stringProp>
+            <stringProp name="BoundaryExtractor.rboundary">&lt;/span&gt;</stringProp>
+            <stringProp name="BoundaryExtractor.default"></stringProp>
+            <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
+            <stringProp name="BoundaryExtractor.match_number"></stringProp>
+          </BoundaryExtractor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_Book_3_Products_T12_Find Reservations (SRS)_Not Required" enabled="false">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//a[@class=&quot;user-bar_reservationsLink&quot;]&apos;)).click();
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;Confirmation or Itinerary Number&quot;]&apos;)).sendKeys(&apos;${c_confirmationNumber}&apos;);
+Thread.sleep(${sleep});
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;Email Address&quot;]&apos;)).sendKeys(&apos;${email}&apos;);
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//button[@class=&quot;btn button_btn button_primary button_md&quot;]&apos;)).click();
+//new WebDriverWait (WDS.browser, Duration.ofSeconds(120)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(&apos;//div[@class=&quot;sip-widgets-recommended-offers-component&quot;]//div[@class=&quot;spark-carousel__item--content spark-carousel__panel&quot;]&apos;)));
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.elementToBeClickable(By.xpath(&apos;//button[@class=&quot;btn button_btn button_primary button_sm&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_Book_3_Products_T12_Change This Reservation" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//button[@class=&quot;btn button_btn button_primary button_sm&quot;]&apos;)).click();
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//span[@class=&quot;app_radioBox&quot;]&apos;)).click();
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//div[@class=&quot;button_group&quot;]//button[@class=&quot;btn button_btn button_primary button_sm&quot;]&apos;)).click();
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//div[@class=&quot;edit-reservation-modal_guestOrPayment&quot;]//span[@class=&quot;app_radioBox&quot;]&apos;)).click();
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//div[@class=&quot;button_group&quot;]//button[@class=&quot;btn button_btn button_primary button_sm&quot;]&apos;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//span[text()=&quot;I agree with the Privacy Terms.&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_Book_3_Products_T13_Update Reservation (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;First Name&quot;]&apos;)).sendKeys(&apos; S&apos;);
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//input[@aria-label=&quot;Last Name&quot;]&apos;)).sendKeys(&apos; K&apos;);
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//label[@for=&quot;privacyPolicy&quot;]&apos;)).click();
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//button[@class=&quot;btn button_btn button_primary button_md&quot;]&apos;)).click();
+//new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(&apos;//div[@class=&quot;sip-widgets-recommended-offers-component&quot;]//div[@class=&quot;spark-carousel__item--content spark-carousel__panel&quot;]&apos;)));
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.elementToBeClickable(By.xpath(&apos;//button[@class=&quot;btn button_btn button_primary button_sm&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SBE_Book_3_Products_T14_Cancel Reservation (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//div[@class=&quot;confirmation-container_cancelReservations&quot;]//button[@class=&quot;btn button_btn button_primary button_sm&quot;]&apos;)).click();
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//button[@class=&quot;btn button_btn button_primary button_md&quot;]&apos;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(&apos;//span[@class=&quot;confirmation-message_Cancelled&quot;]//span[text()=&quot;Cancelled&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SVA_Modify And Cancel Reservations_3_Products_80_TPH" enabled="true">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <longProp name="ThreadGroup.duration">3600</longProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_randomStartDateBooking" enabled="true">
+          <stringProp name="maximumValue">7</stringProp>
+          <stringProp name="minimumValue">1</stringProp>
+          <stringProp name="outputFormat"></stringProp>
+          <boolProp name="perThread">false</boolProp>
+          <stringProp name="randomSeed"></stringProp>
+          <stringProp name="variableName">randomStartDateBooking</stringProp>
+        </RandomVariableConfig>
+        <hashTree/>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_randomEndDateBooking" enabled="true">
+          <stringProp name="maximumValue">7</stringProp>
+          <stringProp name="minimumValue">2</stringProp>
+          <stringProp name="outputFormat"></stringProp>
+          <boolProp name="perThread">false</boolProp>
+          <stringProp name="randomSeed"></stringProp>
+          <stringProp name="variableName">randomEndDateBooking</stringProp>
+        </RandomVariableConfig>
+        <hashTree/>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_randomfirstName" enabled="true">
+          <stringProp name="maximumValue">999999</stringProp>
+          <stringProp name="minimumValue">1</stringProp>
+          <stringProp name="outputFormat"></stringProp>
+          <boolProp name="perThread">false</boolProp>
+          <stringProp name="randomSeed"></stringProp>
+          <stringProp name="variableName">randomfirstName</stringProp>
+        </RandomVariableConfig>
+        <hashTree/>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable_randomlastName" enabled="true">
+          <stringProp name="maximumValue">999999</stringProp>
+          <stringProp name="minimumValue">1</stringProp>
+          <stringProp name="outputFormat"></stringProp>
+          <boolProp name="perThread">false</boolProp>
+          <stringProp name="randomSeed"></stringProp>
+          <stringProp name="variableName">randomlastName</stringProp>
+        </RandomVariableConfig>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_T01_Homepage" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+//ProcessBuilder builder = new ProcessBuilder(&apos;cmd.exe&apos;, &apos;/c&apos;, &apos;chrome-debug --port=9222&apos;);
+//builder.redirectErrorStream(true);
+//Process p = builder.start();
+
+WDS.browser.manage().window().setSize(new org.openqa.selenium.Dimension(1980, 1024));
+WDS.browser.manage().window().maximize();
+WDS.sampleResult.sampleStart()
+WDS.browser.navigate().to(&apos;https://ngva.sab-dev-sh-l1-app-2020.dev.sabre-gcp.com/signIn&apos;)
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.id(&apos;usernameInput&apos;)));
+WDS.sampleResult.sampleEnd()
+
+String URL = WDS.browser.getCurrentUrl();
+WDS.vars.put(&quot;URL&quot;, URL);
+
+//String originalWindow = WDS.browser.getWindowHandle();
+//WDS.browser.switchTo().newWindow(WindowType.TAB); 
+//String newWindow = WDS.browser.getWindowHandle();
+//WDS.browser.switchTo().window(originalWindow); 
+//WDS.browser.close();
+//WDS.browser.switchTo().window(newWindow); 
+//WDS.browser.navigate().to(URL)
+//
+//ProcessBuilder builder1 = new ProcessBuilder(&apos;cmd.exe&apos;, &apos;/c&apos;, &apos;lighthouse&apos;, URL, &apos;--port=9222&apos;, &apos;--preset=desktop&apos;, &apos;--disable-storage-reset=true&apos;, &apos;--output-path=C://apache-jmeter-5.5//bin//Homepage.html&apos;)
+//builder1.redirectErrorStream(true);
+//Process p1 = builder1.start();
+//
+//BufferedReader r = new BufferedReader(new InputStreamReader(p1.getInputStream()));
+//String line;
+//while (true) 
+//{
+//   line = r.readLine();
+//     if (line == null) 
+//     {
+//         break;
+//     }
+////  WDS.log.info(line);
+//}</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="false">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">ProcessBuilder builder = new ProcessBuilder(&apos;cmd.exe&apos;, &apos;/c&apos;, &apos;chrome-debug --port=9222&apos;);
+builder.redirectErrorStream(true);
+Process p = builder.start();
+
+String URL = vars.get(&quot;URL&quot;);
+log.info(URL);
+
+ProcessBuilder process = new ProcessBuilder(&apos;cmd.exe&apos;, &apos;/c&apos;, &apos;lighthouse&apos;, URL, &apos;--port=9222&apos;, &apos;--preset=desktop&apos;, &apos;--disable-storage-reset&apos;, &apos;--output-path=C://apache-jmeter-5.5//bin//&apos;+prev.getSampleLabel()+&apos;.html&apos;);
+process.redirectErrorStream(true);
+Process p1 = process.start();
+
+BufferedReader r = new BufferedReader(new InputStreamReader(p1.getInputStream()));
+String line;
+while (true) 
+{
+   line = r.readLine();
+     if (line == null) 
+     {
+         break;
+     }
+//  	log.info(line);
+}</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_T02_Login" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+//ProcessBuilder builder = new ProcessBuilder(&apos;cmd.exe&apos;, &apos;/c&apos;, &apos;chrome-debug --port=9222&apos;);
+//builder.redirectErrorStream(true);
+//Process p = builder.start();
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.id(&apos;usernameInput&apos;)).sendKeys(&apos;${userName}&apos;);
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.id(&apos;passwordInput&apos;)).sendKeys(&apos;${password}&apos;);
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//*[@id=&quot;content&quot;]/div/div/div/article/section/div/div/div/div/div[2]/form/div[3]/div[2]/button&apos;)).submit()
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//*[contains(@class, &quot;btn spark-btn spark-btn--sm spark-btn--secondary spark-btn&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()
+
+String URL = WDS.browser.getCurrentUrl();
+WDS.vars.put(&quot;URL&quot;, URL);
+
+//String originalWindow = WDS.browser.getWindowHandle();
+//WDS.browser.switchTo().newWindow(WindowType.TAB); 
+//String newWindow = WDS.browser.getWindowHandle();
+//WDS.browser.switchTo().window(originalWindow); 
+//WDS.browser.close();
+//WDS.browser.switchTo().window(newWindow); 
+//WDS.browser.navigate().to(URL)
+
+//ProcessBuilder builder1 = new ProcessBuilder(&apos;cmd.exe&apos;, &apos;/c&apos;, &apos;lighthouse&apos;, URL, &apos;--port=9222&apos;, &apos;--preset=desktop&apos;, &apos;--disable-storage-reset=true&apos;, &apos;--output-path=C://apache-jmeter-5.5//bin//Homepage.html&apos;)
+//builder1.redirectErrorStream(true);
+//Process p1 = builder1.start();
+//
+//BufferedReader r = new BufferedReader(new InputStreamReader(p1.getInputStream()));
+//String line;
+//while (true) 
+//{
+//   line = r.readLine();
+//     if (line == null) 
+//     {
+//         break;
+//     }
+////  WDS.log.info(line);
+//}</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="false">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">String URL = vars.get(&quot;URL&quot;);
+log.info(URL);
+ProcessBuilder process = new ProcessBuilder(&apos;cmd.exe&apos;, &apos;/c&apos;, &apos;lighthouse&apos;, URL, &apos;--port=9222&apos;, &apos;--preset=desktop&apos;, &apos;--disable-storage-reset&apos;, &apos;--output-path=C://apache-jmeter-5.5//bin//&apos;+prev.getSampleLabel()+&apos;.html&apos;);
+process.redirectErrorStream(true);
+Process p = process.start();
+
+BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
+String line;
+while (true) 
+{
+   line = r.readLine();
+     if (line == null) 
+     {
+         break;
+     }
+//  	log.info(line);
+}</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_T03_Select Hotel" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+List&lt;WebElement&gt; randomHotel = WDS.browser.findElements(By.xpath(&quot;//*[contains(@class, &apos;btn spark-btn spark-btn--sm spark-btn--secondary spark-btn&apos;)]&quot;));
+Random random = new Random()
+int index = random.nextInt(randomHotel.size())
+WDS.sampleResult.sampleStart()
+randomHotel.get(index).click()
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.elementToBeClickable(By.xpath(&apos;//div[@id=&quot;availability-search-filter-container&quot;]//button[@class=&quot;spark-btn spark-icon spark-btn--secondary spark-icon-math-add&quot;]&apos;)));
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.elementToBeClickable(By.xpath(&apos;//span[@class=&quot;weather-location-label&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_T04_Search Dates" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//*[@id=&quot;availability-search-filter-container&quot;]/div[3]/div/div/div[2]/div/div[1]/div[1]/a/i&apos;)).click();
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+def checkin = WDS.browser.findElements(By.xpath(&apos;//a[@class=&quot;spark-calendar__day&quot;][@aria-valuenow=&quot;&apos;+&apos;${startDateBooking}&apos;+&apos;&quot;]&apos;))[1];
+Thread.sleep(${sleep})
+checkin.click();
+Thread.sleep(${sleep})
+def checkout = WDS.browser.findElements(By.xpath(&apos;//a[@class=&quot;spark-calendar__day&quot;][@aria-valuenow=&quot;&apos;+&apos;${endDateBooking}&apos;+&apos;&quot;]&apos;))[1]
+Thread.sleep(${sleep})
+checkout.click();
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//*[@id=&quot;availability-search-filter-container&quot;]/div[6]/div/div/button&apos;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.elementToBeClickable(By.xpath(&apos;//*[contains(@class, &quot;availability-display__results-product-total&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">import java.time.LocalDate;
+import java.time.Duration;
+
+LocalDate startDateBooking = LocalDate.now().plusDays(Long.parseLong(vars.get(&quot;randomStartDateBooking&quot;))+2);
+LocalDate endDateBooking = startDateBooking.plusDays(Long.parseLong(vars.get(&quot;randomEndDateBooking&quot;)));
+
+String startDate = startDateBooking.format(&quot;dd-MM-yyyy&quot;);
+String endDate = endDateBooking.format(&quot;dd-MM-yyyy&quot;);
+
+Duration diff = Duration.between(startDateBooking.atStartOfDay(), endDateBooking.atStartOfDay());
+
+long duration = diff.toDays();
+vars.put(&quot;startDateBooking&quot;, startDate);
+vars.put(&quot;endDateBooking&quot;,endDate);
+vars.put(&quot;duration&quot;, duration.toString());</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_T05_Click On Rooms" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//span[text()=&quot;Room&quot;]&apos;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//*[contains(@class, &quot;product-name-and-code&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_Book_3_Products_T06_Select Rooms (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@class, &apos;spark-expand-panel__arrow-section&apos;)]&quot;)).click();
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@data-test, &apos;select-DRate1&apos;)]&quot;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(&quot;//div[@class=&apos;offer-image-container clickable&apos;]&quot;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_Book_3_Products_T07_Click On First Product (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+int endLimitP1, startLimitP2, endLimitP2, startLimitP3
+List&lt;WebElement&gt; totalNoOfProducts = WDS.browser.findElements(By.xpath(&quot;//div[@class=&apos;offer-image-container clickable&apos;]&quot;));
+int totalProducts = totalNoOfProducts.size()
+if(totalProducts == 10)
+{
+	endLimitP1 = 3;
+}
+
+if(totalProducts == 20)
+{
+	endLimitP1 = 6;
+}
+
+if(totalProducts == 30)
+{
+	endLimitP1 = 10;
+}
+int rand1 = new SplittableRandom().nextInt(1, endLimitP1);
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElements(By.xpath(&quot;//div[@class=&apos;offer-image-container clickable&apos;]&quot;))[rand1-1].click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//*[contains(@class, &quot;spark-btn spark-progress spark-btn--md btn btn-primary btn-lg&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()	</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_Book_3_Products_T08_Select First Product (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.*; 
+
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@class, &apos;spark-btn spark-progress spark-btn--md btn btn-primary btn-lg&apos;)]&quot;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//div[@class=&quot;sip-widgets-offer__action-buttons&quot;]//div[contains(@class, &quot;offer-added-indicator&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_Book_3_Products_T09_Click On Second Product (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+List&lt;WebElement&gt; totalNoOfProducts = WDS.browser.findElements(By.xpath(&quot;//div[@class=&apos;offer-image-container clickable&apos;]&quot;));
+int totalProducts = totalNoOfProducts.size()
+if(totalProducts == 10)
+{
+	startLimitP2 = 4;
+	endLimitP2 = 6;
+}
+
+if(totalProducts == 20)
+{
+	startLimitP2= 7;
+	endLimitP2 = 12;
+}
+
+if(totalProducts == 30)
+{
+	startLimitP2 = 11;
+	endLimitP2 = 20;
+}
+int rand2 = new SplittableRandom().nextInt(startLimitP2, endLimitP2);
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElements(By.xpath(&quot;//div[@class=&apos;offer-image-container clickable&apos;]&quot;))[rand2-1].click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//*[contains(@class, &quot;spark-btn spark-progress spark-btn--md btn btn-primary btn-lg&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_Book_3_Products_T10_Select Second Product (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.*; 
+
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@class, &apos;spark-btn spark-progress spark-btn--md btn btn-primary btn-lg&apos;)]&quot;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//div[@class=&quot;sip-widgets-offer__action-buttons&quot;]//div[contains(@class, &quot;offer-added-indicator&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_Book_3_Products_T11_Click On Third Product (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+List&lt;WebElement&gt; totalNoOfProducts = WDS.browser.findElements(By.xpath(&quot;//div[@class=&apos;offer-image-container clickable&apos;]&quot;));
+int totalProducts = totalNoOfProducts.size()
+if(totalProducts == 10)
+{
+	startLimitP3 = 7;
+}
+
+if(totalProducts == 20)
+{
+	startLimitP3= 13;
+}
+
+if(totalProducts == 30)
+{
+	startLimitP3 = 21;
+}
+int rand3 = new SplittableRandom().nextInt(startLimitP3, totalProducts);
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElements(By.xpath(&quot;//div[@class=&apos;offer-image-container clickable&apos;]&quot;))[rand3-1].click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//*[contains(@class, &quot;spark-btn spark-progress spark-btn--md btn btn-primary btn-lg&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_Book_3_Products_T12_Select Third Product (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@class, &apos;spark-btn spark-progress spark-btn--md btn btn-primary btn-lg&apos;)]&quot;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//div[@class=&quot;sip-widgets-offer__action-buttons&quot;]//div[contains(@class, &quot;offer-added-indicator&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_Book_3_Products_T13_Continue (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@class, &apos;btn spark-btn--sm spark-mar-t-1 spark-btn&apos;)]&quot;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//*[contains(@class, &quot;btn spark-btn--sm automation-button-reservation-confirm spark-btn&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_T14_Add Guest Info" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@class, &apos;btn spark-btn--sm spark-btn--secondary spark-btn&apos;)]&quot;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//*[contains(@data-test, &quot;find-guest-first-name&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_T15_Search By Name" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@data-test, &apos;find-guest-first-name&apos;)]&quot;)).sendKeys(&apos;${firstName}&apos;);
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@data-test, &apos;find-guest-last-name&apos;)]&quot;)).sendKeys(&apos;${lastName}&apos;);
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@data-test, &apos;find-guest-search&apos;)]&quot;)).click();
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@class, &apos;btn spark-btn spark-btn--sm spark-btn--secondary ngva-continue-without-profile-button margin-left spark-btn&apos;)]&quot;)).click();
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@class, &apos;btn spark-btn--sm save-btn spark-btn&apos;)]&quot;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//*[contains(@data-test, &quot;confirm-reservation-btn&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import java.util.Date;
+
+/*String firstName = &quot;PE SVA First&quot;+vars.get(&quot;randomfirstName&quot;).toString();
+String lastName = &quot;PE SVA Last&quot;+vars.get(&quot;randomlastName&quot;).toString();*/
+
+Date d = new Date();
+String date = d.format(&quot;yyyyMMddHHmm&quot;);
+
+String firstName = &quot;PE SVA UI First&quot;+date+vars.get(&quot;randomfirstName&quot;).toString();
+String lastName = &quot;PE SVA UI Last&quot;+date+vars.get(&quot;randomlastName&quot;).toString();
+
+vars.put(&quot;firstName&quot;, firstName);
+vars.put(&quot;lastName&quot;, lastName);
+vars.put(&quot;date&quot;, date);</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_Book_3_Products_T16_Confirm (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@class, &apos;spark-checkbox__box&apos;)]&quot;)).click();
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//*[contains(@data-test, &apos;confirm-reservation-btn&apos;)]&quot;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(&apos;//div[@class=&quot;sip-widgets-recommended-offers-component&quot;]//div[@class=&quot;spark-carousel__item--content spark-carousel__panel&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_T17_Find_Find A Reservation" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//li[@class=&quot;spark-menu__list-item find-menu&quot;]//a[text()=&quot;Find&quot;]&apos;)).click();
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//li[@class=&quot;spark-menu__list-item find-menu&quot;]//a[text()=&quot;Find a Reservation&quot;]&apos;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.id(&apos;firstnameInput&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_T18_Search By Name" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.id(&quot;firstnameInput&quot;)).sendKeys(&apos;${firstName}&apos;);
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.id(&quot;lastNameInput&quot;)).sendKeys(&apos;${lastName}&apos;);
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//button[contains(@class, &apos;btn btn spark-btn spark-btn--sm automation-button-find-reservation-input-form-find margin-left spark-btn&apos;)]&quot;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//span[contains(@data-test, &quot;confirmation-number-label&quot;)]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_Edit_Booking_3_Products_T19_View Reservation (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//button[@class=&quot;btn btn spark-btn--secondary spark-btn--sm spark-btn&quot;]&apos;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(&apos;//div[@class=&quot;sip-widgets-recommended-offers-component&quot;]//div[@class=&quot;spark-carousel__item--content spark-carousel__panel&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_T20_Edit Guest" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*; 
+
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&quot;//button[contains(@data-test, &apos;confirm-page-edit-guest&apos;)]&quot;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//button[@data-test=&quot;confirm-reservation-btn&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_Edit_Booking_3_Products_T21_Edit Guest Info (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*;
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//button[contains(@class, &quot;btn spark-btn--sm spark-btn--secondary edit-btn spark-btn&quot;)][text()=&quot;Edit Guest Info&quot;]&apos;)).click();
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElements(By.xpath(&apos;//div[@class=&quot;ngva-reservation-guest&quot;]//input[contains(@class, &quot;spark-input__field&quot;)]&apos;))[13].sendKeys(&apos;123456789&apos;);
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElements(By.xpath(&apos;//button[contains(@class, &quot;btn spark-btn--sm save-btn spark-btn&quot;)][text()=&quot;Save&quot;]&apos;))[1].click();
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//span[contains(@class, &quot;spark-label&quot;)][text()=&quot;I have read the Cancel and Booking Policies to the Customer *&quot;]&apos;)).click()
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//button[contains(@data-test, &quot;confirm-reservation-btn&quot;)][text()=&quot;Confirm&quot;]&apos;)).click()
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(&apos;//div[@class=&quot;sip-widgets-recommended-offers-component&quot;]//div[@class=&quot;spark-carousel__item--content spark-carousel__panel&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="SVA_Cancel_Booking_3_Products_T22_Cancel Reservation (SRS)" enabled="true">
+          <stringProp name="WebDriverSampler.script">import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import java.time.*;
+
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//button[@data-test=&quot;cancel-rez-button&quot;]&apos;)).click();
+WDS.sampleResult.sampleStart()
+WDS.browser.manage().timeouts().implicitlyWait(${timeout},TimeUnit.SECONDS);
+WDS.browser.findElement(By.xpath(&apos;//button[@class=&quot;btn spark-btn spark-btn--sm spark-modal__nav-primary spark-btn&quot;][text()=&quot;Cancel Reservation&quot;]&apos;)).click();
+new WebDriverWait (WDS.browser, Duration.ofSeconds(${timeout})).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(&apos;//span[@class=&quot;status-pill cancelled&quot;][text()=&quot;Canceled&quot;]&apos;)));
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+        <stringProp name="filename">SRS_Combined.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames"></stringProp>
+        <boolProp name="ignoreFirstLine">false</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
